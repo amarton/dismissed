@@ -6,14 +6,14 @@
 	z-index: 2
 
 	p
-		max-width: 700px
+		max-width: 800px
 		font:
 			family: $georgia
 			size: 16px
 		color: #555
 		line-height: 1.6
 		margin-bottom: 25px
-		+links(maroon, underline)
+		+links($dark-orange, underline)
 		@media (max-width: $no-rail)
 			margin: 0 auto 25px auto
 
@@ -62,10 +62,10 @@
 			// line-height: 90px
 			margin-top: -10px
 			font:
-				family: $prata
+				family: $pt-serif
 				// size: 90px
 				size: 70px
-			color: maroon
+			color: $dark-orange
 			line-height: 70px
 			// @media (max-width: 4023px)
 			position: static
@@ -88,9 +88,9 @@
 		&__text
 			display: inline-block
 			padding: 10px 30px
-			border-top: 1px solid $navy
+			border-top: 1px solid $teal
 			font:
-				family: $prata
+				family: $pt-serif
 				size: 30px
 			color: #333
 			position: relative
@@ -100,18 +100,18 @@
 				top: -3px
 				left: 50%
 				+size(100px 5px)
-				background-color: $navy
+				background-color: $teal
 				transform: translateX(-50%)
 
 
 
 .inline-media
 	float: right
-	//border: $navy solid
+	//border: $teal solid
 	background-color: white
 	margin: 20px 0 20px 30px
 	position: relative
-	border-top: 2px solid $navy
+	border-top: 2px solid $teal
 
 	&__title
 		position: absolute
@@ -129,7 +129,7 @@
 			size: 18px
 		+links(#999, none)
 		a:hover
-			color: maroon
+			color: $dark-orange
 
 
 	&__source
@@ -176,7 +176,7 @@
 		border-width: 2px 0 5px 0
 		padding: 15px 0
 		font:
-			family: $prata
+			family: $pt-serif
 			size: 30px
 
 		&__src
@@ -212,7 +212,7 @@
 				size: 14px
 				weight: 700
 			color: white
-			background-color: $navy
+			background-color: $teal
 			display: block
 			width: 100%
 			text-align: center
@@ -253,7 +253,7 @@
 				family: $roboto
 				size: 18px
 
-			+links(maroon, underline)
+			+links($dark-orange, underline)
 
 
 	&--video

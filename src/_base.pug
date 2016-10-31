@@ -34,9 +34,11 @@ html(class="no-js", lang="en")
 
 		//CSS
 		link(rel="stylesheet", type="text/css", href="dist/stylesheets/style.css")
+		link(title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css")
 
 		//Fonts
 		link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?family=Prata|Roboto+Condensed:400,700")
+		link(href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet")
 
 		//Facebook OpenGraph
 		meta(property="og:title", content="")
@@ -93,6 +95,7 @@ html(class="no-js", lang="en")
 		//Load the rest
 		//script(src="dist/min/javascript-min.js")
 		script(src="dist/min/app.min.js")
+		script(src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js")
 
 		//Configuration for scrollReveal.js
 		script.
@@ -103,3 +106,9 @@ html(class="no-js", lang="en")
 			 	vFactor: 0.5
 			}
 			window.sr = new scrollReveal(config);
+		//Script for TimelineJS
+		script.
+			var additionalOptions = {
+				timenav_position: "top"
+			}
+			timeline = new TL.Timeline('timeline-embed', 'https://docs.google.com/spreadsheets/d/1Fm-q8VDai21op4piC4Q4EPP9YgrwBAccaygp0xkskd4/pubhtml', additionalOptions);

@@ -18,8 +18,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="dist/stylesheets/style.css">
+    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
     <!--Fonts-->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Prata|Roboto+Condensed:400,700">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
     <!--Facebook OpenGraph-->
     <meta property="og:title" content="">
     <meta property="og:url" content="">
@@ -102,7 +104,7 @@
       	source(src="" type="video/webm")
       -->
       <div class="header__text">
-        <div class="container container--header">
+        <div class="story-container story-container--header">
           <div class="header__part-no">Series title</div>
           <div class="header__title">Title</div>
         </div>
@@ -134,7 +136,7 @@
         </div>
       </div>
     </div>
-    <div class="container container--article">
+    <div class="story-container story-container--article">
       <div class="article">
         <div class="article__byline">Byline</div>
         <div class="article__dateline">Date</div>
@@ -165,7 +167,7 @@
         </div>
       </div>
     </div>
-    <div class="container container--article">
+    <div class="story-container story-container--article">
       <div class="article">
         <!--ad--><div class="ad ad--cube">
 
@@ -182,10 +184,6 @@
         <p>Mauris dapibus lectus ut imperdiet lobortis. Aenean tempus sapien ac augue malesuada, at posuere arcu sodales. Sed at dapibus justo. Donec tempus nec felis convallis consequat. </p>
         <p>Suspendisse vitae molestie enim. Nam est quam, pulvinar vitae ipsum non, rutrum tincidunt sapien. Suspendisse orci est, rhoncus eget auctor ut, elementum a sapien. Suspendisse semper egestas sem sed cursus. Etiam sed mauris lorem. Vestibulum accumsan commodo vestibulum.</p>
         <p>Sed viverra, libero a sagittis condimentum, dui sapien cursus mauris, a aliquet mi mauris ac augue.  Sed id ligula ac enim luctus euismod. Etiam dapibus venenatis magna. Suspendisse ac condimentum massa, sit amet egestas risus. Vestibulum tempus diam ac malesuada pellentesque.                   </p>
-      </div>
-    </div>
-    <div class="container container--article">
-      <div class="article">
         <p>Maecenas aliquet in sapien et finibus. Fusce tincidunt ligula mauris, sit amet vulputate elit lacinia sit amet. Etiam interdum mi id est lacinia, quis tincidunt sapien accumsan.  Fusce arcu orci, iaculis vel laoreet non, fermentum vitae turpis. </p>
         <p>Maecenas varius rutrum tellus eget mollis. Praesent ut euismod ante, eu laoreet erat. In eu posuere lectus. Cras leo turpis, accumsan eu sem eget, gravida ultrices magna. Quisque vitae odio imperdiet, cursus tellus condimentum, tincidunt est.</p>
         <p>Proin lacinia convallis dolor ac elementum. Quisque venenatis augue ipsum, ut sollicitudin libero sagittis non. Praesent finibus semper enim vitae volutpat. Nullam placerat non ipsum eu laoreet.</p>
@@ -247,6 +245,9 @@
           <div class="inline-media--pullquote__src">Quote attribution</div>
         </figure>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Mauris dapibus lectus ut imperdiet lobortis. Aenean tempus sapien ac augue malesuada, at posuere arcu sodales. Sed at dapibus justo. Donec tempus nec felis convallis consequat. </p>
+        <p>Suspendisse vitae molestie enim. Nam est quam, pulvinar vitae ipsum non, rutrum tincidunt sapien. Suspendisse orci est, rhoncus eget auctor ut, elementum a sapien. Suspendisse semper egestas sem sed cursus. Etiam sed mauris lorem. Vestibulum accumsan commodo vestibulum.</p>
+        <p>Sed viverra, libero a sagittis condimentum, dui sapien cursus mauris, a aliquet mi mauris ac augue.  Sed id ligula ac enim luctus euismod. Etiam dapibus venenatis magna. Suspendisse ac condimentum massa, sit amet egestas risus. Vestibulum tempus diam ac malesuada pellentesque.</p>
         <!--small external link-->
         <figure class="inline-media inline-media--pullquote inline-media--small" data-sr>
           <div class="inline-media--external-link__title">External link title</div>
@@ -262,232 +263,20 @@
         </figure>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <!--timeline mixin-->
-        <div class="inline-media--timeline timeline-container">
-          <div class="tl-item">
-            <div class="tl-date">2001-2003</div>
-            <div class="tl-name">Mauris dapibus lectus ut imperdiet lobortis. Aenean tempus sapien ac augue malesuada, at posuere arcu sodales.</div>
-            <div class="arrow-right"></div>
-          </div>
-          <div class="tl-item">
-            <div class="tl-date">2003-2005</div>
-            <div class="tl-name">Suspendisse vitae molestie enim. Nam est quam, pulvinar vitae ipsum non, rutrum tincidunt sapien. Suspendisse orci est, rhoncus eget auctor ut, elementum a sapien. </div>
-            <div class="arrow-right"></div>
-          </div>
-        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <div class="article__chapter-title">
           <div class="article__chapter-title__text">Chapter title</div>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
-    <!--full-width interactive-->  <div class="container container--interactive">
-      <div class="mapSlide__title"> Full-width interactive </div>
-      <div style="height:400px;max-width:1200px;background:#CCC;"></div>
-    </div>
- 
-
-
-
-    <div class="container container--article">
-      <div class="article">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <figure class="inline-media inline-media--video inline-media--big" data-sr>
           <iframe src="https://player.vimeo.com/video/142890066?color=ffffff"></iframe>
         </figure>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
-    <!--full-width video or photo grid-->
-    <!--This interactive is prefixed with "vg" for video grid-->
-    <div class="vg">
-      <div class="container container--interactive">
-        <div class="vg__header">Video or image grid</div>
-        <div class="vg__portraits">
-          <div class="vg__spotlight">
-            <div class="vg__spotlight__content">
-              <div class="vg__spotlight__video">
-                <iframe src="" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay></iframe>
-              </div>
-              <div class="vg__spotlight__info">
-                <div class="vg__spotlight__name"></div>
-                <div class="vg__spotlight__age">Age: <span></span></div>
-                <div class="vg__spotlight__country">Country of origin: <span></span></div>
-                <div class="vg__spotlight__language">Native language: <span></span></div>
-                <div class="vg__spotlight__btns">
-                  <div class="vg__spotlight__btn vg__spotlight__btn--other is-selected" data-src="">
-                    <div>in <span></span></div>
-                  </div>
-                  <div class="vg__spotlight__btn vg__spotlight__btn--english" data-src="">
-                    <div>in English</div>
-                  </div>
-                </div>
-                <div class="vg__spotlight__mobile-dropdown">
-                  <select>
-                    <option value="" disabled selected>Hear another voice:</option>
-                    <option value="exel-estrada">Exel Estrada / Spanish</option>
-                    <option value="carlotta">Carlotta / Italian</option>
-                    <option value="faraz-nadeem">Faraz Nadeem / Urdu</option>
-                    <option value="fayza-al-halabi">Fayza Al halabi / Arabic</option>
-                    <option value="franck-kibinda">Franck Kibinda / French</option>
-                    <option value="franklin-aguilar">Franklin Aguilar / Spanish</option>
-                    <option value="karen-abuel">Karen Abuel / Tagalog</option>
-                    <option value="kibra-buluts">Kibra Buluts / Tigrignya</option>
-                    <option value="maria-lourenco">Maria Lourenco / Portuguese</option>
-                    <option value="mona-al-halabi">Mona Al halabi / Arabic</option>
-                    <option value="monique-ngomba">Monique Ngomba / Sango</option>
-                    <option value="mussa-alenga">Mussa Alenga / Swahili</option>
-                    <option value="nan-wang">Nan Wang / Mandarin, Shangai dialect</option>
-                    <option value="nar-bahadur-darjee">Nar Bahadur Darjee / Nepali</option>
-                    <option value="narmin-aleethawi">Narmin Al Eethawi / Arabic</option>
-                    <option value="norma-argueta">Norma Argueta / Spanish</option>
-                    <option value="reema-alfaheed">Reema Alfaheed / Arabic</option>
-                    <option value="tina-lin">Tina Lin / Mandarin</option>
-                    <option value="vigueur-kibinda">Vigueur Kibinda / French</option>
-                    <option value="yonas-fishaye">Yonas Fishaye / Tigrignya/Amharic</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="vg__portraits-row" data-row="1">
-            <div class="vg__portrait" data-kid="exel-estrada" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Exel Estrada</div>
-                <div class="vg__portrait__lang">Spanish</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="carlotta" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Carlotta</div>
-                <div class="vg__portrait__lang">Italian</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="faraz-nadeem" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Faraz Nadeem</div>
-                <div class="vg__portrait__lang">Urdu</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="fayza-al-halabi" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Fayza Al halabi</div>
-                <div class="vg__portrait__lang">Arabic</div>
-              </div>
-            </div>
-          </div>
-          <div class="vg__portraits-row" data-row="2">
-            <div class="vg__portrait" data-kid="franck-kibinda" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Franck Kibinda</div>
-                <div class="vg__portrait__lang">French</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="franklin-aguilar" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Franklin Aguilar</div>
-                <div class="vg__portrait__lang">Spanish</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="karen-abuel" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Karen Abuel</div>
-                <div class="vg__portrait__lang">Tagalog</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="kibra-buluts" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Kibra Buluts</div>
-                <div class="vg__portrait__lang">Tigrignya</div>
-              </div>
-            </div>
-          </div>
-          <div class="vg__portraits-row" data-row="3">
-            <div class="vg__portrait" data-kid="maria-lourenco" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Maria Lourenco</div>
-                <div class="vg__portrait__lang">Portuguese</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="mona-al-halabi" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Mona Al halabi</div>
-                <div class="vg__portrait__lang">Arabic</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="monique-ngomba" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Monique Ngomba</div>
-                <div class="vg__portrait__lang">Sango</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="mussa-alenga" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Mussa Alenga</div>
-                <div class="vg__portrait__lang">Swahili</div>
-              </div>
-            </div>
-          </div>
-          <div class="vg__portraits-row" data-row="4">
-            <div class="vg__portrait" data-kid="nan-wang" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Nan Wang</div>
-                <div class="vg__portrait__lang">Mandarin, Shangai dialect</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="nar-bahadur-darjee" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Nar Bahadur Darjee</div>
-                <div class="vg__portrait__lang">Nepali</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="narmin-aleethawi" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Narmin Al Eethawi</div>
-                <div class="vg__portrait__lang">Arabic</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="norma-argueta" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Norma Argueta</div>
-                <div class="vg__portrait__lang">Spanish</div>
-              </div>
-            </div>
-          </div>
-          <div class="vg__portraits-row" data-row="5">
-            <div class="vg__portrait" data-kid="reema-alfaheed" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Reema Alfaheed</div>
-                <div class="vg__portrait__lang">Arabic</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="tina-lin" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Tina Lin</div>
-                <div class="vg__portrait__lang">Mandarin</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="vigueur-kibinda" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Vigueur Kibinda</div>
-                <div class="vg__portrait__lang">French</div>
-              </div>
-            </div>
-            <div class="vg__portrait" data-kid="yonas-fishaye" style="background-image: url('dist/images/example.jpg')">
-              <div class="vg__portrait__details">
-                <div class="vg__portrait__name">Yonas Fishaye</div>
-                <div class="vg__portrait__lang">Tigrignya/Amharic</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="vg__expand-btn-container">
-          <div class="vg__expand-btn">Expand</div>
-        </div>
-      </div>
-    </div>
-    <div class="container container--article">
+    <div id="timeline-embed" style="width: 100%; height: 600px"></div>
+    <div class="story-container story-container--article">
       <div class="article">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <!--small link to photo gallery in sidebar-->
@@ -569,6 +358,7 @@
     <!--Load the rest-->
     <!--script(src="dist/min/javascript-min.js")-->
     <script src="dist/min/app.min.js"></script>
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
     <!--Configuration for scrollReveal.js-->
     <script>
       var config = {
@@ -578,6 +368,13 @@
        	vFactor: 0.5
       }
       window.sr = new scrollReveal(config);
+    </script>
+    <!--Script for TimelineJS-->
+    <script>
+      var additionalOptions = {
+      	timenav_position: "top"
+      }
+      timeline = new TL.Timeline('timeline-embed', 'https://docs.google.com/spreadsheets/d/1Fm-q8VDai21op4piC4Q4EPP9YgrwBAccaygp0xkskd4/pubhtml', additionalOptions);
     </script>
   </body>
 </html>
