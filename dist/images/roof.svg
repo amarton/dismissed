@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="100px" height="18px" viewBox="0.123 -0.339 100 18"
+	 overflow="visible" enable-background="new 0.123 -0.339 100 18" xml:space="preserve">
+<defs>
+</defs>
+<polyline fill="none" stroke="#155757" stroke-miterlimit="10" points="0.123,16.499 51.123,3.545 100.123,16.499 "/>
+<line fill="none" stroke="#155757" stroke-width="3" stroke-miterlimit="10" x1="69.09" y1="8.295" x2="69.116" y2="0.005"/>
+</svg>
