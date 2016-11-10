@@ -37,7 +37,6 @@ html(class="no-js", lang="en")
 		link(title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css")
 
 		//Fonts
-		link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?family=Prata|Roboto+Condensed:400,700")
 		link(href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet")
 
 		//Facebook OpenGraph
@@ -91,6 +90,10 @@ html(class="no-js", lang="en")
 
 		//Load the rest
 		//script(src="dist/min/javascript-min.js")
+		//Adobe Typekit loads Franklin
+		script(src="https://use.typekit.net/nta3eyd.js")
+		script.
+			try{Typekit.load({ async: true });}catch(e){}
 		script(src="dist/min/app.min.js")
 		script(src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js")
 
