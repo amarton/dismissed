@@ -476,23 +476,81 @@
 
 .swiper-slide
 	width: 98% !important
+	font-size: 1.25em
 	@media (max-width:500px)
 		width: 95% !important
 
-.swiper-slide ul 
+.swiper-slide ul
 	padding-left: 25px
+	font-size: 1em
+	@media (max-width:950px)
+		font-size: .85em
+	@media (max-width:500px)
+		font-size: .75em
+
 
 .intro-slide
 	font-size: 1.5em
 	text-align: center
 	font-weight: 700
-.slider-text
-	padding: 10px
-	@media (max-width:500px)
-		padding: 0
+
 .court
 	font-weight: 700
 	color: #59A3A3
+	font-family: $franklin
+	text-transform: uppercase
+	font-size: 1.5em
+	@media (max-width:800px)
+		font-size: 1em
+	@media (max-width:500px)
+		font-size: .75em
+
+
+.slider-text
+	padding: 50px
+	padding-top: 20px
+	@media (max-width:500px)
+		padding: 10px
+
+	&__title
+		font:
+			family: $franklin
+			size: 3em
+			weight: 700
+		color: #fff
+		text-transform: uppercase
+		padding-top: 20px
+		@media (max-width:900px)
+			padding-top: 0px
+			font-size: 2em
+		@media (max-width:450px)
+			padding-top: 0px
+			font-size: 1.25em
+
+	&__chatter
+		font:
+			family: $franklin
+			size: 1em
+		color: $light-teal
+		@media (max-width:600px)
+			padding-top: 0px
+			font-size: .85em
+
+	
+.slider-text p a:link, .slider-text p a:visited 
+	font:
+		family: $franklin
+		size: 1em
+	color: #fff
+	text-transform: uppercase
+	text-decoration: none
+	cursor: pointer
+	
+
+.white
+	color: #fff
+
+
 .button 
 	background-color: $teal
 	font-weight: 700
