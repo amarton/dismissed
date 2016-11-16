@@ -221,6 +221,11 @@
 			text-transform: uppercase
 			font-weight: 700
 
+	&--slider
+		height: 400px
+		@media (max-width: 500px)
+			height: 500px
+
 	&--pic
 		border-width: 0 0 5px 0
 		img
@@ -429,3 +434,63 @@
 		position: absolute
 		top: -9px
 		left: -12px
+//styles for explainer slider/carousel
+.swiper-container
+    width: 100%
+    height: 100%
+    font-family: $franklin
+    background-color: #000
+    color: #FFF
+
+.swiper-btn-next
+	position: absolute
+	top: 90%
+	left: 94%
+	width: 27px
+	height: 44px
+	z-index: 10
+	cursor: pointer
+	font-size: 28px
+	@media (max-width:500px)
+		left: 90%
+		font-size: 20px
+
+.swiper-btn-prev
+	position: absolute
+	top: 90%
+	left: 90%
+	width: 27px
+	height: 44px
+	z-index: 10
+	cursor: pointer
+	font-size: 28px
+	@media (max-width:500px)
+		left: 85%
+		font-size: 20px
+
+.swiper-pagination-bullet
+	background: #FFF !important
+
+.swiper-pagination-bullet-active
+	background: $teal !important
+
+.swiper-slide
+	width: 98% !important
+	@media (max-width:500px)
+		width: 95% !important
+
+.swiper-slide ul 
+	padding-left: 25px
+
+.intro-slide
+	font-size: 1.5em
+	text-align: center
+	font-weight: 700
+.slider-text
+	padding: 10px
+	@media (max-width:500px)
+		padding: 0
+.court
+	font-weight: 700
+	color: #59A3A3
+	
