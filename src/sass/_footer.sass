@@ -1,7 +1,7 @@
 /* Footer, comments styles */
 
 .footer
-	background-color: #222
+	background-color: #000
 
 	&__credits
 		padding: 30px 0 (30px - 30px) 0
@@ -11,11 +11,15 @@
 		color: white
 		text-align: center
 		font-family: $franklin
+		font-weight: 700
 		+clearfix
 
 		@media (max-width: 750px)
 			width: auto
 
+		&--main
+			font-size: 24px !important
+			width: 100% !important
 			
 
 		ul
@@ -26,8 +30,6 @@
 
 			@media (min-width: 551px)
 				width: (100%/3)
-				&:nth-child(4n)
-					clear: both
 			
 			@media (max-width: 550px)
 				width: (100%/2)
@@ -87,10 +89,9 @@
 			text-align: center
 			margin: 0 0 10px 0
 			font:
-				family: $pt-serif
+				family: $franklin
 				size: 30px
 				weight: 400
 
 		@media (max-width: 550px)
 			display: none
-

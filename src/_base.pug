@@ -1,16 +1,3 @@
-mixin footer(credits)
-	footer.footer
-		section.footer__credits
-			ul
-				each credit in credits
-					li.label #{credit.role}
-					li #{credit.name}
-		section.footer__comments
-			include includes/comments.html
-		section.footer__logo
-			img(src="dist/images/baltimore-sun-logo-white.png" width="300")
-
-
 doctype html
 //if lt IE 7
 	<html class="no-js lt-ie9 lt-ie8 lt-ie7">
@@ -73,9 +60,35 @@ html(class="no-js", lang="en")
 
 		include includes/ads/ad-for-body--leaderboard.html
 
-		//footer mixin
-		+footer([{'role': 'That Role','name': 'This Person'},{'role': 'This Role', 'name': 'That Person'}])
+		//footer
+		footer.footer
+			section.footer__credits
+				ul.footer__credits--main
+					li.label Reporting
+					li Name
+				ul
+					li.label Department
+					li Name
+					li Name
+					li Name
+				ul
+					li.label Department
+					li Name
+					li Name
+					li Name
+					
 
+				ul
+					li.label Department
+					li Name
+					li Name
+					li Name
+
+			.footer__logo
+				img(src="dist/images/baltimore-sun-logo-white.png" width="300")
+		
+		section.footer__comments
+			include includes/comments.html
 
 
 

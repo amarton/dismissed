@@ -108,8 +108,13 @@
     </div>
     <div class="story-container story-container--article">
       <div class="article">
-        <div class="article__byline">Byline</div>
-        <div class="article__dateline">Date</div>
+        <div class="row">
+          <div class="col-sm-1">
+            <div class="article__byline">Byline</div>
+            <div class="article__dateline">Date</div>
+          </div>
+          <div class="col-sm-2 tophat-share-tools"><span class="icon-facebook"></span><span class="icon-twitter"></span></div>
+        </div>
         <!--menu for series-->
         <figure class="inline-media inline-media--small inline-media--not-mobile" data-sr>
           <div class="inline-media__title"><a href="#">More in the series</a></div>
@@ -336,6 +341,10 @@
           <btn class="inline-media--pic__open-gallery"> <a href="#" target="_blank">OPEN GALLERY					</a></btn>
         </figure>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="inline-media inline-media--med subscribe">
+          <h3>Support our investigative journalism</h3></br> Become a Baltimore Sun subscriber today to support stories like this one. <a href="http://ad.baltimoresun.com/land-article/" target="_blank">Start getting full access to our signature journalism for just $4.99 for 3 months.</a>
+</br>
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <div class="article__chapter-title">
@@ -414,17 +423,35 @@
 	<!-- End AdSlot 2 -->
 
 </div>
-    <!--footer mixin-->
+    <!--footer-->
     <footer class="footer">
       <section class="footer__credits">
+        <ul class="footer__credits--main">
+          <li class="label">Reporting</li>
+          <li>Name</li>
+        </ul>
         <ul>
-          <li class="label">That Role</li>
-          <li>This Person</li>
-          <li class="label">This Role</li>
-          <li>That Person</li>
+          <li class="label">Department</li>
+          <li>Name</li>
+          <li>Name</li>
+          <li>Name</li>
+        </ul>
+        <ul>
+          <li class="label">Department</li>
+          <li>Name</li>
+          <li>Name</li>
+          <li>Name</li>
+        </ul>
+        <ul>
+          <li class="label">Department</li>
+          <li>Name</li>
+          <li>Name</li>
+          <li>Name</li>
         </ul>
       </section>
-      <section class="footer__comments"><!-- Facebook Commenting -->
+      <div class="footer__logo"><img src="dist/images/baltimore-sun-logo-white.png" width="300"></div>
+    </footer>
+    <section class="footer__comments"><!-- Facebook Commenting -->
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -442,9 +469,7 @@
   <!--replace data-href with page url to enable facebook comments-->
   <div class="fb-comments" data-href="#" data-width="100%" data-numposts="10" data-colorscheme="light"></div>
 </div>
-      </section>
-      <section class="footer__logo"><img src="dist/images/baltimore-sun-logo-white.png" width="300"/></section>
-    </footer>
+    </section>
     <!-- Javascript-->
     <!--Load jQuery CDN, fall back to local version if necessary		-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
