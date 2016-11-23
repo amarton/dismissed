@@ -83,7 +83,7 @@
 			font:
 				family: $franklin
 				size: 2.5em
-			text-transform: uppercase
+			//text-transform: uppercase
 			font-weight: 700
 			color: #333
 			position: relative
@@ -110,7 +110,7 @@
 			size: 4em
 			weight: 700
 		color: #fff
-		text-transform: uppercase
+
 
 	&__chatter
 		font:
@@ -362,7 +362,7 @@
 	margin-bottom: 25px
 	
 .tl-timeline h1, h2, h3, h4
-	font-family: $pt-serif
+	font-family: $franklin
 
 .tl-text p, .tl-headline-date, h3.tl-headline-date, .tl-timeaxis-tick-text, .tl-slidenav-title, .tl-slidenav-description 
 	font-family: $franklin !important	
@@ -382,6 +382,12 @@
 	@media (max-width: 1000px)
 		display: none
 
+.tl-timeline h2.tl-headline-title
+	font-size: 4em !important
+	line-height: 66px !important
+	@media (max-width: 800px)
+		font-size: 2.5em !important
+		line-height: 50px !important
 
 .tl-item
 	padding: 10px 0px 10px 20px
@@ -503,7 +509,6 @@
 	font-weight: 700
 	color: #59A3A3
 	font-family: $franklin
-	text-transform: uppercase
 	font-size: 1.5em
 	@media (max-width:800px)
 		font-size: 1em
@@ -523,7 +528,6 @@
 			size: 3em
 			weight: 700
 		color: #fff
-		text-transform: uppercase
 		padding-top: 20px
 		@media (max-width:900px)
 			padding-top: 0px
