@@ -19,7 +19,7 @@ var app = app || {
 
 		$(".icon-facebook").on("click", function(){
 
-			var picture = "http://data.baltimoresun.com/news/rent-court/dist/images/example.jpg"; //Picture URL
+			var picture = "http://data.baltimoresun.com/news/dismissed/dist/images/example.jpg"; //Picture URL
 			var title = "Title here"; //Post title
 			var description = "Placeholder text"; //Post description
 			var url = "#"; //Interactive URL
