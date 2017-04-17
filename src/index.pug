@@ -9,15 +9,11 @@ mixin timeline(items)
 				.arrow-right
 block content
 		.header
-			//.header__background-video
-				video(loop="true" width="100%" height="100%" autoplay muted)
-					source(src="" type="video/mp4")
-					source(src="" type="video/webm")
+			include ../dist/images/rowhouses_illustrations.svg
 			.header__text
-				.story-container.story-container--header
-					.header__part-no Examining Baltimore's Rent Court
-					.header__title Migrants in their own city
-
+		.article.article--header
+			.header__title DISSMISSED
+			.header__part-no Tenants lose, landlords win in rent court
 		.story-container
 			.article
 				.row
@@ -33,7 +29,7 @@ block content
 					.inline-media__title
 						a(href="#") More in the series
 					include includes/_parts-menu.pug
-				
+					
 				p.article__dropcap(data-dropcap="H")
 					span ere is an example of a paragraph with a dropcap. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem purus, accumsan et pellentesque vel, gravida ut augue. 
 				p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
@@ -56,7 +52,7 @@ block content
 				p Maecenas aliquet in sapien et finibus. Fusce tincidunt ligula mauris, sit amet vulputate elit lacinia sit amet. Etiam interdum mi id est lacinia, quis tincidunt sapien accumsan.  Fusce arcu orci, iaculis vel laoreet non, fermentum vitae turpis. 
 				p Maecenas varius rutrum tellus eget mollis. Praesent ut euismod ante, eu laoreet erat. In eu posuere lectus. Cras leo turpis, accumsan eu sem eget, gravida ultrices magna. Quisque vitae odio imperdiet, cursus tellus condimentum, tincidunt est.
 				p Proin lacinia convallis dolor ac elementum. Quisque venenatis augue ipsum, ut sollicitudin libero sagittis non. Praesent finibus semper enim vitae volutpat. Nullam placerat non ipsum eu laoreet.
-				
+					
 				.article__chapter-title
 					div 
 						include ../dist/images/roof.svg
@@ -75,16 +71,16 @@ block content
 				p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 				p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
 				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				
+
 				.inline-media.inline-media--big.info
-						 
+							 
 					h3 About this series
 					</br>Etiam dapibus venenatis magna. Suspendisse ac condimentum massa, sit amet egestas risus. Vestibulum tempus diam ac malesuada pellentesque.
 					</br>
 
 				p Mauris dapibus lectus ut imperdiet lobortis. Aenean tempus sapien ac augue malesuada, at posuere arcu sodales. Sed at dapibus justo. Donec tempus nec felis convallis consequat.
 
-				//multiphoto package - photos enter from left and right
+					//multiphoto package - photos enter from left and right
 				figure.media-package
 					img.media-package__img.media-package__img--left(src="dist/images/vertical-example.jpg" data-sr="enter left")
 					img.media-package__img.media-package__img--right(src="dist/images/example.jpg" data-sr="enter right")
@@ -94,7 +90,7 @@ block content
 				p Sed viverra, libero a sagittis condimentum, dui sapien cursus mauris, a aliquet mi mauris ac augue.  Sed id ligula ac enim luctus euismod. Etiam dapibus venenatis magna. Suspendisse ac condimentum massa, sit amet egestas risus. Vestibulum tempus diam ac malesuada pellentesque.
 				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-				//ad
+					//ad
 				include includes/ads/ad-for-body--cube.html
 
 				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -109,9 +105,9 @@ block content
 				figure.inline-media.inline-media--pullquote.inline-media--med(data-sr)
 					.inline-media--pullquote__text Suspendisse vitae molestie enim
 					.inline-media--pullquote__src Quote attribution
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				
+					
 				//full-width link to photo gallery
 				figure.inline-media.inline-media--pic.inline-media--big(data-sr="enter bottom")
 					img(src="dist/images/example.jpg")
@@ -122,7 +118,7 @@ block content
 				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 				.inline-media.inline-media--med.info
-						 
+							 
 					h3 Support our investigative journalism
 					</br> Become a Baltimore Sun subscriber today to support stories like this one. <a href="http://ad.baltimoresun.com/land-article/" target="_blank">Start getting full access to our signature journalism for just $4.99 for 3 months.</a>
 					</br>
@@ -146,9 +142,8 @@ block content
 
 				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-		#timeline-embed(style="width: 100%; height: 500px")
+			#timeline-embed(style="width: 100%; height: 500px")
 
-		.story-container
 			.article
 
 				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -166,46 +161,44 @@ block content
 
 
 				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				
+					
 				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-		#graphic-embed.worst-landlords
-			.container
-				#graphic-embed__title Baltimore's worst landlords
-				#graphic-embed__chatter The Baltimore Sun analysed data from Maryland Case Search, Baltimore rental registrations, Open Baltimore and other sources of identify landlords and properties that were consistently fined for life, health and saftey violations and other infractions.
-					b  
-						a(href="http://data.baltimoresun.com/news/dismissed/worst-landlords-2016/" target="_blank" style="color:#FFF;text-decoration:none;cursor:pointer") Click here to explore the full interactive.
-					.row
-						.col-sm-4
-							.worst-landlords__block
-								.worst-landlords__landlord Doug Donovan Realty
-								.worst-landlords__stat 11 properties
-								.worst-landlords__stat 23 units
-								.worst-landlords__stat 55 violations
-								a(href="#" target="_blank" class="worst-landlords__link") More detail
-						.col-sm-4
-							.worst-landlords__block  
-								.worst-landlords__landlord Doug Donovan Realty
-								.worst-landlords__stat 11 properties
-								.worst-landlords__stat 23 units
-								.worst-landlords__stat 55 violations
-								a(href="#" target="_blank" class="worst-landlords__link") More detail
-						.col-sm-4
-							.worst-landlords__block
-								.worst-landlords__landlord Doug Donovan Realty
-								.worst-landlords__stat 11 properties
-								.worst-landlords__stat 23 units
-								.worst-landlords__stat 55 violations
-								a(href="#" target="_blank" class="worst-landlords__link") More detail
-					a(href="http://data.baltimoresun.com/news/dismissed/worst-landlords-2016/" class="btn worst-landlords__btn") See the 10 worst landlords in Baltimore
+			#graphic-embed.worst-landlords
+				.container
+					#graphic-embed__title Baltimore's worst landlords
+					#graphic-embed__chatter The Baltimore Sun analysed data from Maryland Case Search, Baltimore rental registrations, Open Baltimore and other sources of identify landlords and properties that were consistently fined for life, health and saftey violations and other infractions.
+						b  
+							a(href="http://data.baltimoresun.com/news/dismissed/worst-landlords-2016/" target="_blank" style="color:#FFF;text-decoration:none;cursor:pointer") Click here to explore the full interactive.
+						.row
+							.col-sm-4
+								.worst-landlords__block
+									.worst-landlords__landlord Doug Donovan Realty
+									.worst-landlords__stat 11 properties
+									.worst-landlords__stat 23 units
+									.worst-landlords__stat 55 violations
+									a(href="#" target="_blank" class="worst-landlords__link") More detail
+							.col-sm-4
+								.worst-landlords__block  
+									.worst-landlords__landlord Doug Donovan Realty
+									.worst-landlords__stat 11 properties
+									.worst-landlords__stat 23 units
+									.worst-landlords__stat 55 violations
+									a(href="#" target="_blank" class="worst-landlords__link") More detail
+							.col-sm-4
+								.worst-landlords__block
+									.worst-landlords__landlord Doug Donovan Realty
+									.worst-landlords__stat 11 properties
+									.worst-landlords__stat 23 units
+									.worst-landlords__stat 55 violations
+									a(href="#" target="_blank" class="worst-landlords__link") More detail
+						a(href="http://data.baltimoresun.com/news/dismissed/worst-landlords-2016/" class="btn worst-landlords__btn") See the 10 worst landlords in Baltimore
 
-		//#graphic-embed
-			#graphic-embed__title I am a graphic text style
-			#graphic-embed__chatter Please be kind to me
+			//#graphic-embed
+				#graphic-embed__title I am a graphic text style
+				#graphic-embed__chatter Please be kind to me
 
-		.story-container
 			.article
-
 				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 				hr
@@ -213,7 +206,7 @@ block content
 				p.credit Contact reporter at <a href="mailto:#" target="_blank"> reporter email </a>
 
 				p.credit Reporting and graphics were produced based on case data from <a href="http://casesearch.courts.state.md.us/casesearch/" target="_blank"/>Maryland Judiciary Case Search</a>. The data was scraped and analyzed for The Sun by attorneys at Maryland Volunteer Lawyer Service.
-	
+		
 				//series menu for mobile
 				figure.inline-media.inline-media--full.inline-media--has-title.inline-media--mobile(data-sr)
 					.inline-media__title More in the series

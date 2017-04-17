@@ -2,7 +2,25 @@
 
 
 .article
-	z-index: 2
+	width: 1000px
+	margin: 0 auto
+	
+	@media (max-width: 970px)
+		width: auto
+		padding: 0 20px
+
+
+	&--header
+		position: relative
+		top: 250px
+		animation: fade-in-up 0.8s 1.5s forwards
+
+
+	&--interactive
+		width: 1200px
+		@media (max-width: 1220px)
+			width: auto
+			padding: 0 10px
 
 	p
 		max-width: 800px
