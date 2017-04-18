@@ -10,10 +10,10 @@ mixin timeline(items)
 block content
 			.article
 				.row
-					.col-sm-1
-						.article__byline Byline
-						.article__dateline Date
-					.col-sm-2.tophat-share-tools
+					.col-sm-4
+						.article__byline By Doug Donovan and Jean Marbella
+						.article__dateline April 21, 2017
+					.col-sm-2.tophat-share-tools(style="float:none;")
 						span.icon-facebook
 						span.icon-twitter
 
@@ -135,7 +135,7 @@ block content
 
 				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-			#timeline-embed(style="width: 100%; height: 500px")
+			//#timeline-embed(style="width: 100%; height: 500px")
 
 			.article
 
@@ -159,33 +159,33 @@ block content
 
 			#graphic-embed.worst-landlords
 				.container
-					#graphic-embed__title Baltimore's worst landlords
+					#graphic-embed__title Baltimore's most cited landlords
 					#graphic-embed__chatter The Baltimore Sun analysed data from Maryland Case Search, Baltimore rental registrations, Open Baltimore and other sources of identify landlords and properties that were consistently fined for life, health and saftey violations and other infractions.
 						b  
-							a(href="http://data.baltimoresun.com/news/dismissed/worst-landlords-2016/" target="_blank" style="color:#FFF;text-decoration:none;cursor:pointer") Click here to explore the full interactive.
+							a(href="http://data.baltimoresun.com/news/dismissed/landlords/" target="_blank" style="color:#FFF;text-decoration:none;cursor:pointer") Click here to explore the full interactive.
 						.row
 							.col-sm-4
 								.worst-landlords__block
-									.worst-landlords__landlord Doug Donovan Realty
-									.worst-landlords__stat 11 properties
-									.worst-landlords__stat 23 units
-									.worst-landlords__stat 55 violations
-									a(href="#" target="_blank" class="worst-landlords__link") More detail
+									.worst-landlords__landlord HABC
+									.worst-landlords__stat 77 properties
+									.worst-landlords__stat 182 units
+									.worst-landlords__stat 66 violations
+									a(href="http://data.baltimoresun.com/news/dismissed/landlords/#1" target="_blank" class="worst-landlords__link") More detail
 							.col-sm-4
 								.worst-landlords__block  
-									.worst-landlords__landlord Doug Donovan Realty
-									.worst-landlords__stat 11 properties
-									.worst-landlords__stat 23 units
-									.worst-landlords__stat 55 violations
-									a(href="#" target="_blank" class="worst-landlords__link") More detail
+									.worst-landlords__landlord M.A.R.M.
+									.worst-landlords__stat 7 properties
+									.worst-landlords__stat 418 units
+									.worst-landlords__stat 56 violations
+									a(href="http://data.baltimoresun.com/news/dismissed/landlords/#2" target="_blank" class="worst-landlords__link") More detail
 							.col-sm-4
 								.worst-landlords__block
-									.worst-landlords__landlord Doug Donovan Realty
-									.worst-landlords__stat 11 properties
-									.worst-landlords__stat 23 units
-									.worst-landlords__stat 55 violations
-									a(href="#" target="_blank" class="worst-landlords__link") More detail
-						a(href="http://data.baltimoresun.com/news/dismissed/worst-landlords-2016/" class="btn worst-landlords__btn") See the 10 worst landlords in Baltimore
+									.worst-landlords__landlord Dunn Wright
+									.worst-landlords__stat 194 properties
+									.worst-landlords__stat 253 units
+									.worst-landlords__stat 34 violations
+									a(href="http://data.baltimoresun.com/news/dismissed/landlords/#3" target="_blank" class="worst-landlords__link") More detail
+						a(href="http://data.baltimoresun.com/news/dismissed/landlords/" class="btn worst-landlords__btn") See the 10 most cited landlords in Baltimore
 
 			//#graphic-embed
 				#graphic-embed__title I am a graphic text style
@@ -196,7 +196,9 @@ block content
 
 				hr
 
-				p.credit Contact reporter at <a href="mailto:#" target="_blank"> reporter email </a>
+				p.credit Contact Doug Donovan at <a href="mailto:ddonovan@baltsun.com" target="_blank"> ddonovan@baltsun.com </a>
+
+				p.credit Contact Jean Marbella at <a href="mailto:jean.marbella@baltsun.comm" target="_blank"> jean.marbella@baltsun.com </a>
 
 				p.credit Reporting and graphics were produced based on case data from <a href="http://casesearch.courts.state.md.us/casesearch/" target="_blank"/>Maryland Judiciary Case Search</a>. The data was scraped and analyzed for The Sun by attorneys at Maryland Volunteer Lawyer Service.
 		
