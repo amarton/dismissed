@@ -56,39 +56,46 @@ html(class="no-js", lang="en")
 		div(data-trb-thirdpartynav)
 
 		//block for story layout
-		block content
+		.header
+			include ../dist/images/rowhouses_illustrations.svg
+			.header__text
+		.article.article--header
+			.header__title DISSMISSED
+			.header__part-no Tenants lose, landlords win in rent court
+		.story-container
+			block content
 
-		include includes/ads/ad-for-body--leaderboard.html
+			include includes/ads/ad-for-body--leaderboard.html
 
-		//footer
-		footer.footer
-			section.footer__credits
-				ul.footer__credits--main
-					li.label Reporting
-					li Name
-				ul
-					li.label Department
-					li Name
-					li Name
-					li Name
-				ul
-					li.label Department
-					li Name
-					li Name
-					li Name
-					
+			//footer
+			footer.footer
+				section.footer__credits
+					ul.footer__credits--main
+						li.label Reporting
+						li Name
+					ul
+						li.label Department
+						li Name
+						li Name
+						li Name
+					ul
+						li.label Department
+						li Name
+						li Name
+						li Name
+						
 
-				ul
-					li.label Department
-					li Name
-					li Name
-					li Name
+					ul
+						li.label Department
+						li Name
+						li Name
+						li Name
 
-			.footer__logo
-				img(src="dist/images/baltimore-sun-logo-white.png" width="300")
-		
-		section.footer__comments
-			include includes/comments.html
+				.footer__logo
+					img(src="dist/images/baltimore-sun-logo-white.png" width="300")
+			
+			section.footer__comments
+				include includes/comments.html
 
 
 
