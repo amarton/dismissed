@@ -138,10 +138,15 @@
 
 	&__chatter
 		font:
-			family: $pt-serif
-			//size: 2em
-		//color: $light-teal
-		color: #FFF
+			family: $franklin
+		font-size: 1.25em
+		width: 90%
+		max-width: 900px
+		color: #fff
+
+		@media (max-width: 600px)
+			font-size: 1em
+
 .worst-landlords 
 	background-image: url(../images/landlords.jpg)
 	height: 420px
@@ -310,6 +315,12 @@
 		@media (max-width: 515px)
 			height: 500px
 
+	&--gamehook
+		height: 250px
+		background: #000
+		padding-top: 25px
+		padding-left: 50px
+	
 	&--pic
 		border-width: 0 0 5px 0
 		img
@@ -656,3 +667,13 @@
 .parts-menu__title.bottom-refer
 	@media (max-width:600px)
 		display: none
+
+a.btn.button.game
+	color: #fff
+	font-size: 1.25em
+	text-decoration: none
+	@media (max-width: 600px)
+		font-size: 1em
+
+a.btn.button.game:hover
+	color: #333
