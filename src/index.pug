@@ -18,10 +18,10 @@ block content
 						span.icon-twitter
 
 				//menu for series
-				//figure.inline-media.inline-media--small.inline-media--not-mobile(data-sr)
-				//	.inline-media__title
-				//		a(href="#") More in the series
-				//	include includes/_parts-menu.pug
+				figure.inline-media.inline-media--small.inline-media--not-mobile(data-sr)
+					.inline-media__title
+						a(href="#") More in the series
+					include includes/_parts-menu.pug
 					
 				p.article__dropcap(data-dropcap="H")
 					span ere is an example of a paragraph with a dropcap. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem purus, accumsan et pellentesque vel, gravida ut augue. 
@@ -241,6 +241,15 @@ block content
 
 				p.credit Reporting and graphics were produced based on case data from <a href="http://casesearch.courts.state.md.us/casesearch/" target="_blank"/>Maryland Judiciary Case Search</a>. The data was scraped and analyzed for The Sun by attorneys at Maryland Volunteer Lawyer Service.
 		
+				</br></br>
+				//menu for series
+				figure.inline-media.inline-media--small.inline-media--not-mobile(data-sr, style="float:none;width:100%;")
+					.inline-media__title(style="text-align:left;")
+						a(href="#") More in the series
+					include includes/_parts-menu.pug
+
+
+
 				//series menu for mobile
 				figure.inline-media.inline-media--full.inline-media--has-title.inline-media--mobile(data-sr)
 					.inline-media__title More in the series
