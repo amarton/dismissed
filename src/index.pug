@@ -10,7 +10,7 @@ mixin timeline(items)
 block content
 			.article
 				.row
-					.col-sm-4
+					.col-sm-4(style="margin-bottom:10px;")
 						.article__byline By Doug Donovan and Jean Marbella
 						.article__dateline April 21, 2017
 					.col-sm-2.tophat-share-tools(style="float:none;")
@@ -23,6 +23,7 @@ block content
 						a(href="#") More in the series
 					include includes/_parts-menu.pug
 					
+				</br>
 				p.article__dropcap(data-dropcap="H")
 					span ere is an example of a paragraph with a dropcap. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem purus, accumsan et pellentesque vel, gravida ut augue. 
 				p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
