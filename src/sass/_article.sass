@@ -167,6 +167,9 @@
 	&__row
 		max-width: 1000px
 		margin: 0 auto
+	.col-sm-4
+		@media (max-width: 770px)
+			width: 100%
 
 	&__block
 		background: #2B2B2B
@@ -299,6 +302,10 @@
 				size: 60px
 			color: $teal
 			float: left
+		@media(max-width: 600px)
+			font-size: 1.5em
+		@media(max-width: 500px)
+			font-size: 1.2em
 		&__text
 			&:after
 				content: '”'
@@ -326,8 +333,16 @@
 	&--gamehook
 		height: 250px
 		background: #000
-		padding-top: 25px
-		padding-left: 50px
+		padding: 20px;
+		@media(max-width: 768px)
+			padding: 15px;
+		@media (max-width: 600px)
+			#graphic-embed__title
+				margin-bottom: 10px
+			#graphic-embed__chatter
+				margin: 0 auto
+		@media (max-width: 420px)
+			height: 300px
 	
 	&--pic
 		border-width: 0 0 5px 0
@@ -556,6 +571,15 @@
     font-family: $franklin
 	font-size: 1.25em
 	z-index: 2
+	.slide-text__chatter
+		a
+			font:
+				family: $franklin
+				size: 1em
+			color: $light-teal
+			text-transform: uppercase
+			text-decoration: none
+			cursor: pointer
 
 //styles for explainer slider/carousel
 .swiper-container
@@ -671,6 +695,8 @@
 	text-transform: uppercase
 	text-decoration: none
 	cursor: pointer
+	
+.slider-text__chatter 
 	
 
 .white
