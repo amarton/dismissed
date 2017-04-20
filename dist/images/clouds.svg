@@ -5,7 +5,7 @@
 	 overflow="visible" enable-background="new 2.299 -0.323 1342 249" xml:space="preserve" class="clouds">
 <defs>
 </defs>
-<g opacity="0.18">
+<g opacity="0.18" class="cloud">
 	<g>
 		<g>
 			<g>
@@ -199,7 +199,7 @@ AABJRU5ErkJggg==" transform="matrix(0.75 0 0 0.75 2.25 167.5)">
 		</g>
 	</g>
 </g>
-<g opacity="0.18">
+<g opacity="0.18" class="cloud">
 	<g>
 		<g>
 			<g>
@@ -413,7 +413,7 @@ mLKAMcrKWdJA8XmsWVHaRgghhBBCCCGEEEIIIS6U/y/AAPfvsFlyDuIrAAAAAElFTkSuQmCC" transf
 		</g>
 	</g>
 </g>
-<g opacity="0.18">
+<g opacity="0.18" class="cloud">
 	<g>
 		<g>
 			<g>
