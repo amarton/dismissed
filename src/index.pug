@@ -207,61 +207,21 @@ block content
 			#graphic-embed.worst-landlords
 				.expandButtonWrapper
 					.expandButton(onClick="$('.worst-landlords').toggleClass('active');")
-						p See All
+						p.expand Expand
+						p.collapse Collapse
 				.container
-					#graphic-embed__title Baltimore's most cited landlords
-					#graphic-embed__chatter The Baltimore Sun analysed data from Maryland Case Search, Baltimore rental registrations, Open Baltimore and other sources of identify landlords and properties that were consistently fined for life, health and saftey violations and other infractions.
+					#graphic-embed__title Life, health and safety
+					#graphic-embed__chatter The Baltimore Sun analysed data from Maryland Case Search to identify landlords and properties that were consistently fined for life, health and saftey violations and other infractions.
 						.row
-							.worst-landlords__blockWrapper
-								.worst-landlords__block
-									.worst-landlords__landlord Housing Authority of Baltimore City
-									.worst-landlords__stat 66 violations
-									.worst-landlords__stat 182 units
-							.worst-landlords__blockWrapper
-								.worst-landlords__block  
-									.worst-landlords__landlord Mid-Atlantic Realty Management
-									.worst-landlords__stat 56 violations
-									.worst-landlords__stat 418 units
-							.worst-landlords__blockWrapper
-								.worst-landlords__block
-									.worst-landlords__landlord Dunne Wright
-									.worst-landlords__stat 34 violations
-									.worst-landlords__stat 253 units
-							.worst-landlords__blockWrapper
-								.worst-landlords__block
-									.worst-landlords__landlord H.A.B.C.
-									.worst-landlords__stat 66 violations
-									.worst-landlords__stat 182 units
-							.worst-landlords__blockWrapper
-								.worst-landlords__block  
-									.worst-landlords__landlord M.A.R.M.
-									.worst-landlords__stat 56 violations
-									.worst-landlords__stat 418 units
-							.worst-landlords__blockWrapper
-								.worst-landlords__block
-									.worst-landlords__landlord Dunne Wright
-									.worst-landlords__stat 34 violations
-									.worst-landlords__stat 253 units
-							.worst-landlords__blockWrapper
-								.worst-landlords__block
-									.worst-landlords__landlord H.A.B.C.
-									.worst-landlords__stat 66 violations
-									.worst-landlords__stat 182 units
-							.worst-landlords__blockWrapper
-								.worst-landlords__block  
-									.worst-landlords__landlord M.A.R.M.
-									.worst-landlords__stat 56 violations
-									.worst-landlords__stat 418 units
-							.worst-landlords__blockWrapper
-								.worst-landlords__block
-									.worst-landlords__landlord Dunne Wright
-									.worst-landlords__stat 34 violations
-									.worst-landlords__stat 253 units
-							.worst-landlords__blockWrapper
-								.worst-landlords__block
-									.worst-landlords__landlord Dunne Wright
-									.worst-landlords__stat 34 violations
-									.worst-landlords__stat 253 units
+							include includes/_landlord-data.pug
+							each landlord in landlords
+								.worst-landlords__blockWrapper
+									.worst-landlords__block
+										.worst-landlords__landlord #{landlord.name}
+										.worst-landlords__stat #{landlord.lhsSum} LHS cases
+										.worst-landlords__stat #{landlord.numUnits} units owned
+					#graphic-embed__source
+						p Life, health and safety violations from the Maryland Judiciary Case Search were analyzed by attorneys at the Maryland Volunteer Lawyer Service. These violations revealed in rent court show substandard housing conditions for tenants. The number of units owned by each landlord was obtained via staff reports.
 
 			.article
 				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

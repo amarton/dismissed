@@ -153,7 +153,7 @@
 			font-size: 1.7em
 
 
-	&__chatter
+	&__chatter, &__source
 		font:
 			family: $franklin
 		font-size: 1.25em
@@ -165,6 +165,11 @@
 		@media (max-width: 990px)
 			font-size: 1em
 
+	&__source
+		max-width: 600px
+		font-size: .9em
+
+
 .worst-landlords 
 	position: relative
 	height: 420px
@@ -172,7 +177,6 @@
 	background-image: url(../images/landlords.jpg)
 	background-size: cover
 	overflow: hidden
-	@include transition(all .5s ease)
 	&:after
 		position: absolute
 		bottom: 0
@@ -182,11 +186,16 @@
 		width: 100%
 		background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1))
 
+	p.collapse
+		display: none
 	&.active
 		height: 100%
-		@include transition(all 1s ease)
 		&:after
 			background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0))
+		p.expand
+			display: none
+		p.collapse
+			display: block			
 
 	.expandButtonWrapper
 		position: absolute
@@ -227,25 +236,24 @@
 
 	&__blockWrapper
 		display: inline-block
+		vertical-align: top
 		width: 35%
+		height: 130px
+		margin: 10px
 		@media (max-width: 770px)
 			width: 45%
+			height: 100px
+			margin: 5px
 		@media (max-width: 530px)
 			width: 100%
 	&__block
-		height: 130px
+		height: 100%
 		background: #2B2B2B
 		background: rgba(black, 0.3) 
 		color: #FFF
 		border: 1px solid #FFF
 		font-family: $franklin
 		padding: 5px
-		margin: 20px
-		@media (max-width: 770px)
-			height: 100px
-			margin: 10px
-		@media (max-width: 530px)
-			// width: 100%
 	&__block
 
 	&__landlord
