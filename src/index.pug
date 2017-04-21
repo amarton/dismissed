@@ -206,20 +206,64 @@ block content
 
 			#graphic-embed.worst-landlords
 				.expandButtonWrapper
-					.expandButton(onClick="$('.worst-landlords').toggleClass('active');")
+					.expandButton(onClick="$('.worst-landlords').toggleClass('active'); $('html, body').animate({scrollTop: $('.worst-landlords').offset().top}, 500);")
 						p.expand Expand
 						p.collapse Collapse
 				.container
 					#graphic-embed__title Life, health and safety
-					#graphic-embed__chatter The Baltimore Sun analysed data from Maryland Case Search to identify landlords and properties that were consistently fined for life, health and saftey violations and other infractions.
+					#graphic-embed__chatter 
+						p The Baltimore Sun analysed data from Maryland Case Search to identify landlords and properties that were consistently fined for life, health and saftey violations and other infractions.
 						.row
-							include includes/_landlord-data.pug
-							each landlord in landlords
-								.worst-landlords__blockWrapper
-									.worst-landlords__block
-										.worst-landlords__landlord #{landlord.name}
-										.worst-landlords__stat #{landlord.lhsSum} LHS cases
-										.worst-landlords__stat #{landlord.numUnits} units owned
+							.worst-landlords__blockWrapper
+								.worst-landlords__block
+									.worst-landlords__landlord HOUSING AUTHORITY OF BALTIMORE CITY
+									.worst-landlords__stat 66 LHS cases
+									.worst-landlords__stat 11000 units owned
+							.worst-landlords__blockWrapper
+								.worst-landlords__block
+									.worst-landlords__landlord MID-ATLANTIC REALTY MANAGEMENT
+									.worst-landlords__stat 56 LHS cases
+									.worst-landlords__stat 2500 units owned
+							.worst-landlords__blockWrapper
+								.worst-landlords__block
+									.worst-landlords__landlord DUNNE WRIGHT	
+									.worst-landlords__stat 34 LHS cases
+									.worst-landlords__stat 600 units owned
+							.worst-landlords__blockWrapper
+								.worst-landlords__block
+									.worst-landlords__landlord MARYLAND PROPERTY MANAGEMENT, LLC
+									.worst-landlords__stat 29 LHS cases
+									.worst-landlords__stat 680 units owned
+							.worst-landlords__blockWrapper
+								.worst-landlords__block
+									.worst-landlords__landlord SAGE MANAGEMENT
+									.worst-landlords__stat 26 LHS cases
+									.worst-landlords__stat 960 units owned
+							.worst-landlords__blockWrapper
+								.worst-landlords__block
+									.worst-landlords__landlord PROGRESSIVE PROPERTY INC
+									.worst-landlords__stat 20 LHS cases
+									.worst-landlords__stat N/A units owned
+							.worst-landlords__blockWrapper
+								.worst-landlords__block
+									.worst-landlords__landlord C BROWN PROPERTIES
+									.worst-landlords__stat 19 LHS cases
+									.worst-landlords__stat 150 units owned
+							.worst-landlords__blockWrapper
+								.worst-landlords__block
+									.worst-landlords__landlord BLUE STAR
+									.worst-landlords__stat 18 LHS cases
+									.worst-landlords__stat 400 units owned
+							.worst-landlords__blockWrapper
+								.worst-landlords__block
+									.worst-landlords__landlord BLUE OCEAN
+									.worst-landlords__stat 15 LHS cases
+									.worst-landlords__stat 2631 units owned
+							.worst-landlords__blockWrapper
+								.worst-landlords__block
+									.worst-landlords__landlord WAZ INVESTMENT
+									.worst-landlords__stat 10 LHS cases
+									.worst-landlords__stat About 100 units owned
 					#graphic-embed__source
 						p Life, health and safety violations from the Maryland Judiciary Case Search were analyzed by attorneys at the Maryland Volunteer Lawyer Service. These violations revealed in rent court show substandard housing conditions for tenants. The number of units owned by each landlord was obtained via staff reports.
 

@@ -3217,14 +3217,15 @@ ss7XEF0AAAAASUVORK5CYII=" transform="matrix(0.75 0 0 0.7519 310.5 1.5039)">
       </div>
       <div class="worst-landlords" id="graphic-embed">
         <div class="expandButtonWrapper">
-          <div class="expandButton" onClick="$('.worst-landlords').toggleClass('active');">
+          <div class="expandButton" onClick="$('.worst-landlords').toggleClass('active'); $('html, body').animate({scrollTop: $('.worst-landlords').offset().top}, 500);">
             <p class="expand">Expand</p>
             <p class="collapse">Collapse</p>
           </div>
         </div>
         <div class="container">
           <div id="graphic-embed__title">Life, health and safety</div>
-          <div id="graphic-embed__chatter">The Baltimore Sun analysed data from Maryland Case Search to identify landlords and properties that were consistently fined for life, health and saftey violations and other infractions.
+          <div id="graphic-embed__chatter"> 
+            <p>The Baltimore Sun analysed data from Maryland Case Search to identify landlords and properties that were consistently fined for life, health and saftey violations and other infractions.</p>
             <div class="row">
               <div class="worst-landlords__blockWrapper">
                 <div class="worst-landlords__block">
@@ -3242,7 +3243,7 @@ ss7XEF0AAAAASUVORK5CYII=" transform="matrix(0.75 0 0 0.7519 310.5 1.5039)">
               </div>
               <div class="worst-landlords__blockWrapper">
                 <div class="worst-landlords__block">
-                  <div class="worst-landlords__landlord">DUNNE WRIGHT</div>
+                  <div class="worst-landlords__landlord">DUNNE WRIGHT	</div>
                   <div class="worst-landlords__stat">34 LHS cases</div>
                   <div class="worst-landlords__stat">600 units owned</div>
                 </div>
@@ -3293,7 +3294,7 @@ ss7XEF0AAAAASUVORK5CYII=" transform="matrix(0.75 0 0 0.7519 310.5 1.5039)">
                 <div class="worst-landlords__block">
                   <div class="worst-landlords__landlord">WAZ INVESTMENT</div>
                   <div class="worst-landlords__stat">10 LHS cases</div>
-                  <div class="worst-landlords__stat">~100 units owned</div>
+                  <div class="worst-landlords__stat">About 100 units owned</div>
                 </div>
               </div>
             </div>
